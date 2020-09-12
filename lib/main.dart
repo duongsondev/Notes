@@ -1,6 +1,7 @@
 import 'package:fa_notes/page/home.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() => runApp(MyApp());
 
@@ -15,6 +16,9 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       title: "Notes",
       home: HomePage(),
+      theme: ThemeData(
+        fontFamily: GoogleFonts.lato().fontFamily,
+      ),
     );
   }
 }

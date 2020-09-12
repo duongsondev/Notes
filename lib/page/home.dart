@@ -15,6 +15,7 @@ class _HomePageState extends State<HomePage> {
   String _title = "Notes";
   List<Notes> _lstNotes;
   bool bin = false;
+  int type = -1;
 
   @override
   void initState() {
@@ -30,7 +31,13 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         title: Text("$_title"),
-        backgroundColor: bin ? Colors.red : null,
+        backgroundColor: bin
+            ? Colors.red[700]
+            : type == -1
+                ? Colors.blue
+                : type == 0
+                    ? Colors.green
+                    : type == 1 ? Colors.orange : Colors.red,
       ),
       drawer: _drawer(),
       body: _lstNotes == null
@@ -82,16 +89,16 @@ class _HomePageState extends State<HomePage> {
                                     context: context,
                                     builder: (BuildContext context) {
                                       return AlertDialog(
-                                        title: const Text("Xác nhận xóa"),
+                                        title: const Text("Confirm deletion?"),
                                         content: const Text(
-                                            "Sau khi xóa, ghi chú sẽ vẫn còn trong thùng rác."),
+                                            "Once deleted, the note will remain in the trash."),
                                         actions: <Widget>[
                                           FlatButton(
                                               onPressed: () =>
                                                   Navigator.of(context)
                                                       .pop(true),
                                               child: const Text(
-                                                "XÓA",
+                                                "DELETE",
                                                 style: TextStyle(
                                                     color: Colors.red),
                                               )),
@@ -99,7 +106,7 @@ class _HomePageState extends State<HomePage> {
                                             onPressed: () =>
                                                 Navigator.of(context)
                                                     .pop(false),
-                                            child: const Text("THÔI"),
+                                            child: const Text("KEEP"),
                                           ),
                                         ],
                                       );
@@ -217,7 +224,13 @@ class _HomePageState extends State<HomePage> {
       );
 
   Widget _floatButton() => FloatingActionButton(
-        backgroundColor: bin ? Colors.red : null,
+        backgroundColor: bin
+            ? Colors.red[700]
+            : type == -1
+                ? Colors.blue
+                : type == 0
+                    ? Colors.green
+                    : type == 1 ? Colors.orange : Colors.red,
         onPressed: () {
           if (bin) {
             _lstNotes.forEach((notes) => DatabaseApp.deleteNotes(notes.id));
@@ -228,12 +241,18 @@ class _HomePageState extends State<HomePage> {
             Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context) => DetailNotesPage(null)))
+                        builder: (context) =>
+                            DetailNotesPage.add(type == -1 ? 0 : type)))
                 .whenComplete(() {
-              DatabaseApp.getListNotes(1).then((value) {
-                _lstNotes = value;
-                setState(() {});
-              });
+              type == -1
+                  ? DatabaseApp.getListNotes(1).then((value) {
+                      _lstNotes = value;
+                      setState(() {});
+                    })
+                  : DatabaseApp.getListNotesByType(type).then((value) {
+                      _lstNotes = value;
+                      setState(() {});
+                    });
             });
         },
         child: bin ? Icon(Icons.clear_all) : Icon(Icons.add),
@@ -258,7 +277,7 @@ class _HomePageState extends State<HomePage> {
               title: Text("Recycle Bin"),
               leading: Icon(
                 Icons.delete_forever,
-                color: Colors.red,
+                color: Colors.red[700],
               ),
               onTap: () async {
                 _title = "Recycle Bin";
@@ -283,9 +302,10 @@ class _HomePageState extends State<HomePage> {
               title: Text("All"),
               leading: Icon(
                 Icons.brightness_1,
-                color: Colors.green,
+                color: Colors.blue,
               ),
               onTap: () async {
+                type = -1;
                 _title = "Notes";
                 bin = false;
                 await DatabaseApp.getListNotes(1).then((value) {
@@ -309,6 +329,7 @@ class _HomePageState extends State<HomePage> {
           color: ColorType.color[type],
         ),
         onTap: () async {
+          this.type = type;
           _title = "Notes: $title";
           bin = false;
           await DatabaseApp.getListNotesByType(type).then((value) {

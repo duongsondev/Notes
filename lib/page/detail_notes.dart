@@ -6,8 +6,9 @@ import 'package:google_fonts/google_fonts.dart';
 
 class DetailNotesPage extends StatefulWidget {
   Notes notes;
-
+  int dropValue = 0;
   DetailNotesPage(this.notes);
+  DetailNotesPage.add(this.dropValue);
 
   @override
   _DetailNotesPageState createState() => _DetailNotesPageState();
@@ -19,7 +20,6 @@ class _DetailNotesPageState extends State<DetailNotesPage> {
   TextEditingController _ctrlTitle, _ctrlContent;
   var _keyScaffold = GlobalKey<ScaffoldState>();
   int typeNotes = 0;
-  int dropValue = 0;
 
   @override
   void initState() {
@@ -33,7 +33,7 @@ class _DetailNotesPageState extends State<DetailNotesPage> {
       add = false;
       _ctrlTitle.text = widget.notes.title;
       _ctrlContent.text = widget.notes.content;
-      dropValue = widget.notes.type;
+      widget.dropValue = widget.notes.type;
     }
     super.initState();
   }
@@ -62,7 +62,7 @@ class _DetailNotesPageState extends State<DetailNotesPage> {
             FractionallySizedBox(
               widthFactor: 1.0,
               child: DropdownButton<int>(
-                value: dropValue,
+                value: widget.dropValue,
                 isExpanded: true,
                 items: [
                   DropdownMenuItem(
@@ -84,7 +84,7 @@ class _DetailNotesPageState extends State<DetailNotesPage> {
                   )
                 ],
                 onChanged: (value) {
-                  dropValue = value;
+                  widget.dropValue = value;
                   setState(() {});
                 },
               ),
@@ -122,12 +122,12 @@ class _DetailNotesPageState extends State<DetailNotesPage> {
           .showSnackBar(SnackBar(content: Text("Notes empty!")));
     } else {
       if (add) {
-        Notes notes = Notes(0, titleNotes, contentNotes, dropValue,
+        Notes notes = Notes(0, titleNotes, contentNotes, widget.dropValue,
             DateTime.now(), DateTime.now(), 1);
         DatabaseApp.insertNotes(notes);
         Navigator.pop(context);
       } else {
-        Notes notes = Notes(widget.notes.id, titleNotes, contentNotes, dropValue,
+        Notes notes = Notes(widget.notes.id, titleNotes, contentNotes, widget.dropValue,
             widget.notes.dateCreated, DateTime.now(), 1);
         DatabaseApp.updateNotes(notes);
         Navigator.pop(context);
