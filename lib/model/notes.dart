@@ -1,22 +1,21 @@
 class Notes {
   int id;
   String title, content;
-  DateTime create, lastUpdated;
-  bool active;
-  int category;
+  int type;
+  DateTime dateCreated, lastUpdated;
+  int active;
 
-  Notes(this.id, this.title, this.content, this.create, this.lastUpdated,
-      this.active, this.category);
+  Notes(this.id, this.title, this.content, this.type, this.dateCreated,
+      this.lastUpdated, this.active);
 
   Map<String, dynamic> toMap() {
     return {
-      'id': id,
       'title': title,
       'content': content,
-      'create': create,
-      'lastUpdated': lastUpdated,
+      'type': type,
+      'dateCreated': dateCreated.toString(),
+      'lastUpdated': lastUpdated.toString(),
       'active': active,
-      'category': category
     };
   }
 }
