@@ -15,7 +15,7 @@ class _HomePageState extends State<HomePage> {
   String _title = "Notes";
   List<Notes> _lstNotes;
   bool bin = false;
-  int type = -1;
+  int type = 3;
 
   @override
   void initState() {
@@ -31,13 +31,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         title: Text("$_title"),
-        backgroundColor: bin
-            ? Colors.red[700]
-            : type == -1
-                ? Colors.blue
-                : type == 0
-                    ? Colors.green
-                    : type == 1 ? Colors.orange : Colors.red,
+        backgroundColor: ColorType.color[type],
       ),
       drawer: _drawer(),
       body: _lstNotes == null
@@ -224,13 +218,7 @@ class _HomePageState extends State<HomePage> {
       );
 
   Widget _floatButton() => FloatingActionButton(
-        backgroundColor: bin
-            ? Colors.red[700]
-            : type == -1
-                ? Colors.blue
-                : type == 0
-                    ? Colors.green
-                    : type == 1 ? Colors.orange : Colors.red,
+        backgroundColor: bin ? Colors.red[700] : ColorType.color[type],
         onPressed: () {
           if (bin) {
             _lstNotes.forEach((notes) => DatabaseApp.deleteNotes(notes.id));
@@ -264,7 +252,7 @@ class _HomePageState extends State<HomePage> {
           children: [
             DrawerHeader(
               decoration: BoxDecoration(
-                color: Colors.blue,
+                color: ColorType.color[type],
               ),
               child: Center(
                 child: Text(
@@ -282,6 +270,7 @@ class _HomePageState extends State<HomePage> {
               onTap: () async {
                 _title = "Recycle Bin";
                 bin = true;
+                type = 4;
                 await DatabaseApp.getListNotes(0).then((value) {
                   _lstNotes = value;
                   setState(() {});
@@ -305,7 +294,7 @@ class _HomePageState extends State<HomePage> {
                 color: Colors.blue,
               ),
               onTap: () async {
-                type = -1;
+                type = 3;
                 _title = "Notes";
                 bin = false;
                 await DatabaseApp.getListNotes(1).then((value) {
