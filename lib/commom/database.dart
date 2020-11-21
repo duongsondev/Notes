@@ -8,8 +8,7 @@ class DatabaseApp {
   static final String tblNotes = "Notes";
 
   static Future<Database> getDatabaseApp() async {
-    return openDatabase(join(await getDatabasesPath(), "notes.db"),
-        onCreate: (db, version) async {
+    return openDatabase(join(await getDatabasesPath(), "notes.db"), onCreate: (db, version) async {
       await db.execute("CREATE TABLE $tblNotes("
           "id INTEGER PRIMARY KEY AUTOINCREMENT,"
           "title TEXT,"
@@ -23,34 +22,21 @@ class DatabaseApp {
 
   static Future<List<Notes>> getListNotes(int active) async {
     final Database db = await getDatabaseApp();
-    final List<Map<String, dynamic>> maps =
-        await db.rawQuery("SELECT * FROM $tblNotes WHERE active == $active");
+    final List<Map<String, dynamic>> maps = await db.rawQuery("SELECT * FROM $tblNotes WHERE active == $active");
     return List.generate(
         maps.length,
-        (i) => Notes(
-            maps[i]['id'],
-            maps[i]['title'],
-            maps[i]['content'],
-            maps[i]['type'],
-            DateTime.parse(maps[i]['dateCreated']),
-            DateTime.parse(maps[i]['lastUpdated']),
-            maps[i]['active']));
+        (i) => Notes(maps[i]['id'], maps[i]['title'], maps[i]['content'], maps[i]['type'],
+            DateTime.parse(maps[i]['dateCreated']), DateTime.parse(maps[i]['lastUpdated']), maps[i]['active']));
   }
 
   static Future<List<Notes>> getListNotesByType(int type) async {
     final Database db = await getDatabaseApp();
-    final List<Map<String, dynamic>> maps = await db.rawQuery(
-        "SELECT * FROM $tblNotes WHERE active == 1 AND type == $type");
+    final List<Map<String, dynamic>> maps =
+        await db.rawQuery("SELECT * FROM $tblNotes WHERE active == 1 AND type == $type");
     return List.generate(
         maps.length,
-        (i) => Notes(
-            maps[i]['id'],
-            maps[i]['title'],
-            maps[i]['content'],
-            maps[i]['type'],
-            DateTime.parse(maps[i]['dateCreated']),
-            DateTime.parse(maps[i]['lastUpdated']),
-            maps[i]['active']));
+        (i) => Notes(maps[i]['id'], maps[i]['title'], maps[i]['content'], maps[i]['type'],
+            DateTime.parse(maps[i]['dateCreated']), DateTime.parse(maps[i]['lastUpdated']), maps[i]['active']));
   }
 
   static Future<bool> insertNotes(Notes notes) async {
@@ -67,7 +53,7 @@ class DatabaseApp {
   static Future<bool> updateNotes(Notes notes) async {
     try {
       final Database db = await getDatabaseApp();
-      await db.update(tblNotes, notes.toMap(),where: "id == ${notes.id}");
+      await db.update(tblNotes, notes.toMap(), where: "id == ${notes.id}");
       return true;
     } catch (ex) {
       return false;

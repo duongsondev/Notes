@@ -5,8 +5,7 @@ class Notes {
   DateTime dateCreated, lastUpdated;
   int active;
 
-  Notes(this.id, this.title, this.content, this.type, this.dateCreated,
-      this.lastUpdated, this.active);
+  Notes(this.id, this.title, this.content, this.type, this.dateCreated, this.lastUpdated, this.active);
 
   Map<String, dynamic> toMap() {
     return {

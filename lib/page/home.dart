@@ -45,11 +45,8 @@ class _HomePageState extends State<HomePage> {
                     Notes notes = _lstNotes[index];
                     return GestureDetector(
                       onTap: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) =>
-                                    DetailNotesPage(notes))).whenComplete(() {
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => DetailNotesPage(notes)))
+                            .whenComplete(() {
                           DatabaseApp.getListNotes(1).then((value) {
                             _lstNotes = value;
                             setState(() {});
@@ -84,22 +81,16 @@ class _HomePageState extends State<HomePage> {
                                     builder: (BuildContext context) {
                                       return AlertDialog(
                                         title: const Text("Confirm deletion?"),
-                                        content: const Text(
-                                            "Once deleted, the note will remain in the trash."),
+                                        content: const Text("Once deleted, the note will remain in the trash."),
                                         actions: <Widget>[
                                           FlatButton(
-                                              onPressed: () =>
-                                                  Navigator.of(context)
-                                                      .pop(true),
+                                              onPressed: () => Navigator.of(context).pop(true),
                                               child: const Text(
                                                 "DELETE",
-                                                style: TextStyle(
-                                                    color: Colors.red),
+                                                style: TextStyle(color: Colors.red),
                                               )),
                                           FlatButton(
-                                            onPressed: () =>
-                                                Navigator.of(context)
-                                                    .pop(false),
+                                            onPressed: () => Navigator.of(context).pop(false),
                                             child: const Text("KEEP"),
                                           ),
                                         ],
@@ -148,18 +139,14 @@ class _HomePageState extends State<HomePage> {
                       width: 8.0,
                     ),
                     Text(
-                      notes.title.length < 100
-                          ? notes.title
-                          : notes.title.substring(0, 99) + "...",
+                      notes.title.length < 100 ? notes.title : notes.title.substring(0, 99) + "...",
                       style: TextStyle(fontWeight: FontWeight.bold),
                     )
                   ],
                 ),
                 Padding(
                   padding: const EdgeInsets.all(8.0),
-                  child: Text(notes.content.length < 100
-                      ? notes.content
-                      : notes.content.substring(0, 99) + "..."),
+                  child: Text(notes.content.length < 100 ? notes.content : notes.content.substring(0, 99) + "..."),
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -172,8 +159,7 @@ class _HomePageState extends State<HomePage> {
                         ),
                         Text(
                           " ${notes.lastUpdated.day}/${notes.lastUpdated.month}/${notes.lastUpdated.year} ${notes.lastUpdated.hour}:${notes.lastUpdated.minute}",
-                          style: TextStyle(
-                              fontSize: 12.0, fontStyle: FontStyle.italic),
+                          style: TextStyle(fontSize: 12.0, fontStyle: FontStyle.italic),
                         )
                       ],
                     ),
@@ -185,8 +171,7 @@ class _HomePageState extends State<HomePage> {
                         ),
                         Text(
                           " ${notes.dateCreated.day}/${notes.dateCreated.month}/${notes.dateCreated.year} ${notes.dateCreated.hour}:${notes.dateCreated.minute}",
-                          style: TextStyle(
-                              fontSize: 12.0, fontStyle: FontStyle.italic),
+                          style: TextStyle(fontSize: 12.0, fontStyle: FontStyle.italic),
                         )
                       ],
                     ),
@@ -226,11 +211,7 @@ class _HomePageState extends State<HomePage> {
               _lstNotes.clear();
             });
           } else
-            Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) =>
-                            DetailNotesPage.add(type == -1 ? 0 : type)))
+            Navigator.push(context, MaterialPageRoute(builder: (context) => DetailNotesPage.add(type == -1 ? 0 : type)))
                 .whenComplete(() {
               type == -1
                   ? DatabaseApp.getListNotes(1).then((value) {

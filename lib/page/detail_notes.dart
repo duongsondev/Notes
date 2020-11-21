@@ -48,8 +48,7 @@ class _DetailNotesPageState extends State<DetailNotesPage> {
           FlatButton(
             child: Text(
               "Save",
-              style: GoogleFonts.aBeeZee(
-                  color: Colors.white, fontWeight: FontWeight.bold),
+              style: GoogleFonts.aBeeZee(color: Colors.white, fontWeight: FontWeight.bold),
             ),
             onPressed: () => _fncAction(),
           )
@@ -74,13 +73,11 @@ class _DetailNotesPageState extends State<DetailNotesPage> {
                   ),
                   DropdownMenuItem(
                     value: 1,
-                    child: Text("Necessary",
-                        style: TextStyle(color: ColorType.color[1])),
+                    child: Text("Necessary", style: TextStyle(color: ColorType.color[1])),
                   ),
                   DropdownMenuItem(
                     value: 2,
-                    child: Text("Important",
-                        style: TextStyle(color: ColorType.color[2])),
+                    child: Text("Important", style: TextStyle(color: ColorType.color[2])),
                   )
                 ],
                 onChanged: (value) {
@@ -91,10 +88,7 @@ class _DetailNotesPageState extends State<DetailNotesPage> {
             ),
             TextFormField(
               controller: _ctrlTitle,
-              decoration: InputDecoration(
-                  labelText: "Title",
-                  hintText: "Enter title notes",
-                  border: InputBorder.none),
+              decoration: InputDecoration(labelText: "Title", hintText: "Enter title notes", border: InputBorder.none),
               style: GoogleFonts.lato(fontWeight: FontWeight.bold),
             ),
             Divider(),
@@ -103,10 +97,8 @@ class _DetailNotesPageState extends State<DetailNotesPage> {
               maxLines: null,
               minLines: 1,
               controller: _ctrlContent,
-              decoration: InputDecoration(
-                  labelText: "Content",
-                  hintText: "Enter Content notes",
-                  border: InputBorder.none),
+              decoration:
+                  InputDecoration(labelText: "Content", hintText: "Enter Content notes", border: InputBorder.none),
             ),
           ],
         ),
@@ -118,17 +110,15 @@ class _DetailNotesPageState extends State<DetailNotesPage> {
     String titleNotes = _ctrlTitle.text.trim();
     String contentNotes = _ctrlContent.text.trim();
     if (titleNotes.isEmpty && contentNotes.isEmpty) {
-      _keyScaffold.currentState
-          .showSnackBar(SnackBar(content: Text("Notes empty!")));
+      _keyScaffold.currentState.showSnackBar(SnackBar(content: Text("Notes empty!")));
     } else {
       if (add) {
-        Notes notes = Notes(0, titleNotes, contentNotes, widget.dropValue,
-            DateTime.now(), DateTime.now(), 1);
+        Notes notes = Notes(0, titleNotes, contentNotes, widget.dropValue, DateTime.now(), DateTime.now(), 1);
         DatabaseApp.insertNotes(notes);
         Navigator.pop(context);
       } else {
-        Notes notes = Notes(widget.notes.id, titleNotes, contentNotes, widget.dropValue,
-            widget.notes.dateCreated, DateTime.now(), 1);
+        Notes notes = Notes(
+            widget.notes.id, titleNotes, contentNotes, widget.dropValue, widget.notes.dateCreated, DateTime.now(), 1);
         DatabaseApp.updateNotes(notes);
         Navigator.pop(context);
       }
