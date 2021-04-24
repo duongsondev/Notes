@@ -5,95 +5,375 @@
 5    android:versionName="1.0.0" >
 6
 7    <uses-sdk
-8        android:minSdkVersion="16"
-9        android:targetSdkVersion="28" />
+8        android:minSdkVersion="19"
+9        android:targetSdkVersion="30" />
 10    <!--
 11         Flutter needs it to communicate with the running application
 12         to allow setting breakpoints, to provide hot reload, etc.
 13    -->
 14    <uses-permission android:name="android.permission.INTERNET" />
-14-->D:\duongsondev\notes\android\app\src\debug\AndroidManifest.xml:6:5-66
-14-->D:\duongsondev\notes\android\app\src\debug\AndroidManifest.xml:6:22-64
-15    <!--
-16     io.flutter.app.FlutterApplication is an android.app.Application that
-17         calls FlutterMain.startInitialization(this); in its onCreate method.
-18         In most cases you can leave this as-is, but you if you want to provide
-19         additional functionality it is fine to subclass or reimplement
-20         FlutterApplication and put your custom class here.
-21    -->
-22    <application
-22-->D:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:8:5-46:19
-23        android:name="io.flutter.app.FlutterApplication"
-23-->D:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:9:9-57
-24        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-24-->[androidx.core:core:1.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\a528b13ac93e64cafa3d0480e2c93207\core-1.1.0\AndroidManifest.xml:24:18-86
-25        android:debuggable="true"
-26        android:icon="@mipmap/ic_launcher"
-26-->D:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:11:9-43
-27        android:label="fa_notes" >
-27-->D:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:10:9-33
-28        <activity
-28-->D:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:12:9-40:20
-29            android:name="dev.duongson.fa_notes.MainActivity"
-29-->D:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:13:13-41
-30            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-30-->D:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:16:13-163
-31            android:hardwareAccelerated="true"
-31-->D:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:17:13-47
-32            android:launchMode="singleTop"
-32-->D:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:14:13-43
-33            android:theme="@style/LaunchTheme"
-33-->D:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:15:13-47
-34            android:windowSoftInputMode="adjustResize" >
-34-->D:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:18:13-55
-35
-36            <!--
-37                 Specifies an Android theme to apply to this Activity as soon as
-38                 the Android process has started. This theme is visible to the user
-39                 while the Flutter UI initializes. After that, this theme continues
-40                 to determine the Window background behind the Flutter UI.
-41            -->
-42            <meta-data
-42-->D:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:23:13-26:17
-43                android:name="io.flutter.embedding.android.NormalTheme"
-43-->D:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:24:15-70
-44                android:resource="@style/NormalTheme" />
-44-->D:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:25:15-52
-45            <!--
-46                 Displays an Android View that continues showing the launch screen
-47                 Drawable until Flutter paints its first frame, then this splash
-48                 screen fades out. A splash screen is useful to avoid any visual
-49                 gap between the end of Android's launch screen and the painting of
-50                 Flutter's first frame.
-51            -->
-52            <meta-data
-52-->D:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:32:13-35:17
-53                android:name="io.flutter.embedding.android.SplashScreenDrawable"
-53-->D:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:33:15-79
-54                android:resource="@drawable/launch_background" />
-54-->D:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:34:15-61
-55
-56            <intent-filter>
-56-->D:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:36:13-39:29
-57                <action android:name="android.intent.action.MAIN" />
-57-->D:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:37:17-68
-57-->D:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:37:25-66
-58
-59                <category android:name="android.intent.category.LAUNCHER" />
-59-->D:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:38:17-76
-59-->D:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:38:27-74
-60            </intent-filter>
-61        </activity>
-62        <!--
-63             Don't delete the meta-data below.
-64             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
-65        -->
-66        <meta-data
-66-->D:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:43:9-45:33
-67            android:name="flutterEmbedding"
-67-->D:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:44:13-44
-68            android:value="2" />
-68-->D:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:45:13-30
-69    </application>
-70
-71</manifest>
+14-->E:\duongsondev\notes\android\app\src\debug\AndroidManifest.xml:6:5-66
+14-->E:\duongsondev\notes\android\app\src\debug\AndroidManifest.xml:6:22-64
+15    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Android package visibility setting -->
+15-->[com.google.android.gms:play-services-ads-lite:19.7.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\40ae7fa2ed847c116251a2f39d998aae\jetified-play-services-ads-lite-19.7.0\AndroidManifest.xml:24:5-79
+15-->[com.google.android.gms:play-services-ads-lite:19.7.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\40ae7fa2ed847c116251a2f39d998aae\jetified-play-services-ads-lite-19.7.0\AndroidManifest.xml:24:22-76
+16    <queries>
+16-->[com.google.android.gms:play-services-ads-lite:19.7.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\40ae7fa2ed847c116251a2f39d998aae\jetified-play-services-ads-lite-19.7.0\AndroidManifest.xml:27:5-43:15
+17
+18        <!-- For browser content -->
+19        <intent>
+19-->[com.google.android.gms:play-services-ads-lite:19.7.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\40ae7fa2ed847c116251a2f39d998aae\jetified-play-services-ads-lite-19.7.0\AndroidManifest.xml:30:9-36:18
+20            <action android:name="android.intent.action.VIEW" />
+20-->[com.google.android.gms:play-services-ads-lite:19.7.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\40ae7fa2ed847c116251a2f39d998aae\jetified-play-services-ads-lite-19.7.0\AndroidManifest.xml:31:13-65
+20-->[com.google.android.gms:play-services-ads-lite:19.7.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\40ae7fa2ed847c116251a2f39d998aae\jetified-play-services-ads-lite-19.7.0\AndroidManifest.xml:31:21-62
+21
+22            <category android:name="android.intent.category.BROWSABLE" />
+22-->[com.google.android.gms:play-services-ads-lite:19.7.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\40ae7fa2ed847c116251a2f39d998aae\jetified-play-services-ads-lite-19.7.0\AndroidManifest.xml:33:13-74
+22-->[com.google.android.gms:play-services-ads-lite:19.7.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\40ae7fa2ed847c116251a2f39d998aae\jetified-play-services-ads-lite-19.7.0\AndroidManifest.xml:33:23-71
+23
+24            <data android:scheme="https" />
+24-->[com.google.android.gms:play-services-ads-lite:19.7.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\40ae7fa2ed847c116251a2f39d998aae\jetified-play-services-ads-lite-19.7.0\AndroidManifest.xml:35:13-44
+24-->[com.google.android.gms:play-services-ads-lite:19.7.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\40ae7fa2ed847c116251a2f39d998aae\jetified-play-services-ads-lite-19.7.0\AndroidManifest.xml:35:19-41
+25        </intent>
+26        <!-- End of browser content -->
+27        <!-- For CustomTabsService -->
+28        <intent>
+28-->[com.google.android.gms:play-services-ads-lite:19.7.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\40ae7fa2ed847c116251a2f39d998aae\jetified-play-services-ads-lite-19.7.0\AndroidManifest.xml:39:9-41:18
+29            <action android:name="android.support.customtabs.action.CustomTabsService" />
+29-->[com.google.android.gms:play-services-ads-lite:19.7.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\40ae7fa2ed847c116251a2f39d998aae\jetified-play-services-ads-lite-19.7.0\AndroidManifest.xml:40:13-90
+29-->[com.google.android.gms:play-services-ads-lite:19.7.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\40ae7fa2ed847c116251a2f39d998aae\jetified-play-services-ads-lite-19.7.0\AndroidManifest.xml:40:21-87
+30        </intent>
+31        <!-- End of CustomTabsService -->
+32    </queries>
+33
+34    <uses-permission android:name="android.permission.WAKE_LOCK" />
+34-->[com.google.android.gms:play-services-measurement-sdk-api:17.5.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\fa9e05c59fa9149b23386d0f93b052ce\jetified-play-services-measurement-sdk-api-17.5.0\AndroidManifest.xml:25:5-68
+34-->[com.google.android.gms:play-services-measurement-sdk-api:17.5.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\fa9e05c59fa9149b23386d0f93b052ce\jetified-play-services-measurement-sdk-api-17.5.0\AndroidManifest.xml:25:22-65
+35    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+35-->[androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:27:5-81
+35-->[androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:27:22-78
+36    <uses-permission android:name="com.android.vending.BILLING" />
+36-->[com.android.billingclient:billing:3.0.2] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\5024edcea0f8dae0d5ad82cc61a187b5\jetified-billing-3.0.2\AndroidManifest.xml:10:5-67
+36-->[com.android.billingclient:billing:3.0.2] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\5024edcea0f8dae0d5ad82cc61a187b5\jetified-billing-3.0.2\AndroidManifest.xml:10:22-64
+37    <!--
+38 io.flutter.app.FlutterApplication is an android.app.Application that
+39         calls FlutterMain.startInitialization(this); in its onCreate method.
+40         In most cases you can leave this as-is, but you if you want to provide
+41         additional functionality it is fine to subclass or reimplement
+42         FlutterApplication and put your custom class here.
+43    -->
+44    <application
+44-->E:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:8:5-49:19
+45        android:name="io.flutter.app.FlutterApplication"
+45-->E:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:9:9-57
+46        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+46-->[androidx.core:core:1.2.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\37e7f56099c5a626c8d35e80c7951340\core-1.2.0\AndroidManifest.xml:24:18-86
+47        android:debuggable="true"
+48        android:icon="@mipmap/ic_launcher"
+48-->E:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:11:9-43
+49        android:label="fa_notes" >
+49-->E:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:10:9-33
+50        <meta-data
+50-->E:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:12:9-14:69
+51            android:name="com.google.android.gms.ads.APPLICATION_ID"
+51-->E:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:13:13-69
+52            android:value="ca-app-pub-3940256099942544~3347511713" />
+52-->E:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:14:13-67
+53
+54        <activity
+54-->E:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:15:9-43:20
+55            android:name="dev.duongson.fa_notes.MainActivity"
+55-->E:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:16:13-41
+56            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+56-->E:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:19:13-163
+57            android:hardwareAccelerated="true"
+57-->E:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:20:13-47
+58            android:launchMode="singleTop"
+58-->E:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:17:13-43
+59            android:theme="@style/LaunchTheme"
+59-->E:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:18:13-47
+60            android:windowSoftInputMode="adjustResize" >
+60-->E:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:21:13-55
+61
+62            <!--
+63                 Specifies an Android theme to apply to this Activity as soon as
+64                 the Android process has started. This theme is visible to the user
+65                 while the Flutter UI initializes. After that, this theme continues
+66                 to determine the Window background behind the Flutter UI.
+67            -->
+68            <meta-data
+68-->E:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:26:13-29:17
+69                android:name="io.flutter.embedding.android.NormalTheme"
+69-->E:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:27:15-70
+70                android:resource="@style/NormalTheme" />
+70-->E:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:28:15-52
+71            <!--
+72                 Displays an Android View that continues showing the launch screen
+73                 Drawable until Flutter paints its first frame, then this splash
+74                 screen fades out. A splash screen is useful to avoid any visual
+75                 gap between the end of Android's launch screen and the painting of
+76                 Flutter's first frame.
+77            -->
+78            <meta-data
+78-->E:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:35:13-38:17
+79                android:name="io.flutter.embedding.android.SplashScreenDrawable"
+79-->E:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:36:15-79
+80                android:resource="@drawable/launch_background" />
+80-->E:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:37:15-61
+81
+82            <intent-filter>
+82-->E:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:39:13-42:29
+83                <action android:name="android.intent.action.MAIN" />
+83-->E:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:40:17-68
+83-->E:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:40:25-66
+84
+85                <category android:name="android.intent.category.LAUNCHER" />
+85-->E:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:41:17-76
+85-->E:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:41:27-74
+86            </intent-filter>
+87        </activity>
+88        <!--
+89             Don't delete the meta-data below.
+90             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+91        -->
+92        <meta-data
+92-->E:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:46:9-48:33
+93            android:name="flutterEmbedding"
+93-->E:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:47:13-44
+94            android:value="2" />
+94-->E:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:48:13-30
+95        <meta-data
+95-->[:google_mobile_ads] E:\duongsondev\notes\build\google_mobile_ads\intermediates\library_manifest\debug\AndroidManifest.xml:10:9-12:36
+96            android:name="io.flutter.embedded_views_preview"
+96-->[:google_mobile_ads] E:\duongsondev\notes\build\google_mobile_ads\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-61
+97            android:value="true" /> <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
+97-->[:google_mobile_ads] E:\duongsondev\notes\build\google_mobile_ads\intermediates\library_manifest\debug\AndroidManifest.xml:12:13-33
+98        <activity
+98-->[com.google.android.gms:play-services-ads-lite:19.7.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\40ae7fa2ed847c116251a2f39d998aae\jetified-play-services-ads-lite-19.7.0\AndroidManifest.xml:48:9-52:64
+99            android:name="com.google.android.gms.ads.AdActivity"
+99-->[com.google.android.gms:play-services-ads-lite:19.7.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\40ae7fa2ed847c116251a2f39d998aae\jetified-play-services-ads-lite-19.7.0\AndroidManifest.xml:49:13-65
+100            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+100-->[com.google.android.gms:play-services-ads-lite:19.7.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\40ae7fa2ed847c116251a2f39d998aae\jetified-play-services-ads-lite-19.7.0\AndroidManifest.xml:50:13-122
+101            android:exported="false"
+101-->[com.google.android.gms:play-services-ads-lite:19.7.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\40ae7fa2ed847c116251a2f39d998aae\jetified-play-services-ads-lite-19.7.0\AndroidManifest.xml:51:13-37
+102            android:theme="@android:style/Theme.Translucent" />
+102-->[com.google.android.gms:play-services-ads-lite:19.7.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\40ae7fa2ed847c116251a2f39d998aae\jetified-play-services-ads-lite-19.7.0\AndroidManifest.xml:52:13-61
+103
+104        <provider
+104-->[com.google.android.gms:play-services-ads-lite:19.7.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\40ae7fa2ed847c116251a2f39d998aae\jetified-play-services-ads-lite-19.7.0\AndroidManifest.xml:54:9-58:39
+105            android:name="com.google.android.gms.ads.MobileAdsInitProvider"
+105-->[com.google.android.gms:play-services-ads-lite:19.7.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\40ae7fa2ed847c116251a2f39d998aae\jetified-play-services-ads-lite-19.7.0\AndroidManifest.xml:55:13-76
+106            android:authorities="dev.duongson.fa_notes.mobileadsinitprovider"
+106-->[com.google.android.gms:play-services-ads-lite:19.7.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\40ae7fa2ed847c116251a2f39d998aae\jetified-play-services-ads-lite-19.7.0\AndroidManifest.xml:56:13-73
+107            android:exported="false"
+107-->[com.google.android.gms:play-services-ads-lite:19.7.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\40ae7fa2ed847c116251a2f39d998aae\jetified-play-services-ads-lite-19.7.0\AndroidManifest.xml:57:13-37
+108            android:initOrder="100" />
+108-->[com.google.android.gms:play-services-ads-lite:19.7.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\40ae7fa2ed847c116251a2f39d998aae\jetified-play-services-ads-lite-19.7.0\AndroidManifest.xml:58:13-36
+109
+110        <service
+110-->[com.google.android.gms:play-services-ads-lite:19.7.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\40ae7fa2ed847c116251a2f39d998aae\jetified-play-services-ads-lite-19.7.0\AndroidManifest.xml:60:9-63:40
+111            android:name="com.google.android.gms.ads.AdService"
+111-->[com.google.android.gms:play-services-ads-lite:19.7.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\40ae7fa2ed847c116251a2f39d998aae\jetified-play-services-ads-lite-19.7.0\AndroidManifest.xml:61:13-64
+112            android:enabled="true"
+112-->[com.google.android.gms:play-services-ads-lite:19.7.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\40ae7fa2ed847c116251a2f39d998aae\jetified-play-services-ads-lite-19.7.0\AndroidManifest.xml:62:13-35
+113            android:exported="false" />
+113-->[com.google.android.gms:play-services-ads-lite:19.7.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\40ae7fa2ed847c116251a2f39d998aae\jetified-play-services-ads-lite-19.7.0\AndroidManifest.xml:63:13-37
+114
+115        <meta-data
+115-->[com.google.android.gms:play-services-basement:17.3.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\b43c9e81b34cea9c000c4d3830c5a1a2\jetified-play-services-basement-17.3.0\AndroidManifest.xml:23:9-25:69
+116            android:name="com.google.android.gms.version"
+116-->[com.google.android.gms:play-services-basement:17.3.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\b43c9e81b34cea9c000c4d3830c5a1a2\jetified-play-services-basement-17.3.0\AndroidManifest.xml:24:13-58
+117            android:value="@integer/google_play_services_version" />
+117-->[com.google.android.gms:play-services-basement:17.3.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\b43c9e81b34cea9c000c4d3830c5a1a2\jetified-play-services-basement-17.3.0\AndroidManifest.xml:25:13-66
+118
+119        <provider
+119-->[androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:30:9-36:35
+120            android:name="androidx.work.impl.WorkManagerInitializer"
+120-->[androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:31:13-69
+121            android:authorities="dev.duongson.fa_notes.workmanager-init"
+121-->[androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:32:13-68
+122            android:directBootAware="false"
+122-->[androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:33:13-44
+123            android:exported="false"
+123-->[androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:34:13-37
+124            android:multiprocess="true" />
+124-->[androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:35:13-40
+125
+126        <service
+126-->[androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:38:9-43:35
+127            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+127-->[androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:39:13-88
+128            android:directBootAware="false"
+128-->[androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:40:13-44
+129            android:enabled="@bool/enable_system_alarm_service_default"
+129-->[androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:41:13-72
+130            android:exported="false" />
+130-->[androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:42:13-37
+131        <service
+131-->[androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:44:9-50:35
+132            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+132-->[androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:45:13-84
+133            android:directBootAware="false"
+133-->[androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:46:13-44
+134            android:enabled="@bool/enable_system_job_service_default"
+134-->[androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:47:13-70
+135            android:exported="true"
+135-->[androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:48:13-36
+136            android:permission="android.permission.BIND_JOB_SERVICE" />
+136-->[androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:49:13-69
+137
+138        <receiver
+138-->[androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:52:9-57:35
+139            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+139-->[androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:53:13-88
+140            android:directBootAware="false"
+140-->[androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:54:13-44
+141            android:enabled="true"
+141-->[androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:55:13-35
+142            android:exported="false" />
+142-->[androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:56:13-37
+143        <receiver
+143-->[androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:58:9-68:20
+144            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+144-->[androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:59:13-106
+145            android:directBootAware="false"
+145-->[androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:60:13-44
+146            android:enabled="false"
+146-->[androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:61:13-36
+147            android:exported="false" >
+147-->[androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:62:13-37
+148            <intent-filter>
+148-->[androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:64:13-67:29
+149                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+149-->[androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:65:17-87
+149-->[androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:65:25-84
+150                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+150-->[androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:66:17-90
+150-->[androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:66:25-87
+151            </intent-filter>
+152        </receiver>
+153        <receiver
+153-->[androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:69:9-79:20
+154            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+154-->[androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:70:13-104
+155            android:directBootAware="false"
+155-->[androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:71:13-44
+156            android:enabled="false"
+156-->[androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:72:13-36
+157            android:exported="false" >
+157-->[androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:73:13-37
+158            <intent-filter>
+158-->[androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:75:13-78:29
+159                <action android:name="android.intent.action.BATTERY_OKAY" />
+159-->[androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:76:17-77
+159-->[androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:76:25-74
+160                <action android:name="android.intent.action.BATTERY_LOW" />
+160-->[androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:77:17-76
+160-->[androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:77:25-73
+161            </intent-filter>
+162        </receiver>
+163        <receiver
+163-->[androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:80:9-90:20
+164            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+164-->[androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:81:13-104
+165            android:directBootAware="false"
+165-->[androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:82:13-44
+166            android:enabled="false"
+166-->[androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:83:13-36
+167            android:exported="false" >
+167-->[androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:84:13-37
+168            <intent-filter>
+168-->[androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:86:13-89:29
+169                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+169-->[androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:87:17-83
+169-->[androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:87:25-80
+170                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+170-->[androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:88:17-82
+170-->[androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:88:25-79
+171            </intent-filter>
+172        </receiver>
+173        <receiver
+173-->[androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:91:9-100:20
+174            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+174-->[androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:92:13-103
+175            android:directBootAware="false"
+175-->[androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:93:13-44
+176            android:enabled="false"
+176-->[androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:94:13-36
+177            android:exported="false" >
+177-->[androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:95:13-37
+178            <intent-filter>
+178-->[androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:97:13-99:29
+179                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+179-->[androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:98:17-79
+179-->[androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:98:25-76
+180            </intent-filter>
+181        </receiver>
+182        <receiver
+182-->[androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:101:9-112:20
+183            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+183-->[androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:102:13-88
+184            android:directBootAware="false"
+184-->[androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:103:13-44
+185            android:enabled="false"
+185-->[androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:104:13-36
+186            android:exported="false" >
+186-->[androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:105:13-37
+187            <intent-filter>
+187-->[androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:107:13-111:29
+188                <action android:name="android.intent.action.BOOT_COMPLETED" />
+188-->[androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:108:17-79
+188-->[androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:108:25-76
+189                <action android:name="android.intent.action.TIME_SET" />
+189-->[androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:109:17-73
+189-->[androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:109:25-70
+190                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+190-->[androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:110:17-81
+190-->[androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:110:25-78
+191            </intent-filter>
+192        </receiver>
+193        <receiver
+193-->[androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:113:9-122:20
+194            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+194-->[androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:114:13-99
+195            android:directBootAware="false"
+195-->[androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:115:13-44
+196            android:enabled="@bool/enable_system_alarm_service_default"
+196-->[androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:116:13-72
+197            android:exported="false" >
+197-->[androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:117:13-37
+198            <intent-filter>
+198-->[androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:119:13-121:29
+199                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+199-->[androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:120:17-98
+199-->[androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:120:25-95
+200            </intent-filter>
+201        </receiver>
+202
+203        <service
+203-->[androidx.room:room-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\6fb74af179531364ea5af654147e0a60\room-runtime-2.1.0\AndroidManifest.xml:25:9-27:40
+204            android:name="androidx.room.MultiInstanceInvalidationService"
+204-->[androidx.room:room-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\6fb74af179531364ea5af654147e0a60\room-runtime-2.1.0\AndroidManifest.xml:26:13-74
+205            android:exported="false" />
+205-->[androidx.room:room-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\6fb74af179531364ea5af654147e0a60\room-runtime-2.1.0\AndroidManifest.xml:27:13-37
+206
+207        <meta-data
+207-->[com.android.billingclient:billing:3.0.2] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\5024edcea0f8dae0d5ad82cc61a187b5\jetified-billing-3.0.2\AndroidManifest.xml:13:9-15:37
+208            android:name="com.google.android.play.billingclient.version"
+208-->[com.android.billingclient:billing:3.0.2] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\5024edcea0f8dae0d5ad82cc61a187b5\jetified-billing-3.0.2\AndroidManifest.xml:14:13-73
+209            android:value="3.0.2" />
+209-->[com.android.billingclient:billing:3.0.2] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\5024edcea0f8dae0d5ad82cc61a187b5\jetified-billing-3.0.2\AndroidManifest.xml:15:13-34
+210
+211        <activity
+211-->[com.android.billingclient:billing:3.0.2] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\5024edcea0f8dae0d5ad82cc61a187b5\jetified-billing-3.0.2\AndroidManifest.xml:17:9-21:75
+212            android:name="com.android.billingclient.api.ProxyBillingActivity"
+212-->[com.android.billingclient:billing:3.0.2] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\5024edcea0f8dae0d5ad82cc61a187b5\jetified-billing-3.0.2\AndroidManifest.xml:18:13-78
+213            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+213-->[com.android.billingclient:billing:3.0.2] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\5024edcea0f8dae0d5ad82cc61a187b5\jetified-billing-3.0.2\AndroidManifest.xml:19:13-96
+214            android:exported="false"
+214-->[com.android.billingclient:billing:3.0.2] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\5024edcea0f8dae0d5ad82cc61a187b5\jetified-billing-3.0.2\AndroidManifest.xml:20:13-37
+215            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+215-->[com.android.billingclient:billing:3.0.2] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\5024edcea0f8dae0d5ad82cc61a187b5\jetified-billing-3.0.2\AndroidManifest.xml:21:13-72
+216    </application>
+217
+218</manifest>

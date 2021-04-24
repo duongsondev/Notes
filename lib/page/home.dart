@@ -1,12 +1,16 @@
 import 'package:fa_notes/commom/database.dart';
 import 'package:fa_notes/commom/type_color.dart';
+import 'package:fa_notes/configs/app_admob.dart';
+import 'package:fa_notes/configs/remove_ads_config.dart';
 import 'package:fa_notes/model/notes.dart';
 import 'package:fa_notes/page/detail_notes.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 
 class HomePage extends StatefulWidget {
+  static InterstitialAd interstitialAd;
   @override
   _HomePageState createState() => _HomePageState();
 }
@@ -15,15 +19,54 @@ class _HomePageState extends State<HomePage> {
   String _title = "Notes";
   List<Notes> _lstNotes;
   bool bin = false;
-  int type = 3;
-
+  int type = 2;
+  static final AdRequest request = AdRequest(
+    keywords: <String>['notes', 'flutter'],
+    nonPersonalizedAds: true,
+  );
   @override
   void initState() {
     DatabaseApp.getListNotes(1).then((value) {
       _lstNotes = value;
       setState(() {});
     });
+    MobileAds.instance.initialize().then((InitializationStatus status) {
+      print('Initialization done: ${status.adapterStatuses}');
+      MobileAds.instance
+          .updateRequestConfiguration(RequestConfiguration(
+          tagForChildDirectedTreatment:
+          TagForChildDirectedTreatment.unspecified))
+          .then((value) {
+        createInterstitialAd();
+      });
+    });
+    RemoveAdsConfig.checkPurchased(context);
     super.initState();
+  }
+  void createInterstitialAd() {
+    HomePage.interstitialAd ??= InterstitialAd(
+      adUnitId: appAdMob.interstitialAds,
+      request: request,
+      listener: AdListener(
+        onAdLoaded: (Ad ad) {
+          print('${ad.runtimeType} loaded.');
+        },
+        onAdFailedToLoad: (Ad ad, LoadAdError error) {
+          print('${ad.runtimeType} failed to load: $error.');
+          ad.dispose();
+          HomePage.interstitialAd = null;
+          createInterstitialAd();
+        },
+        onAdOpened: (Ad ad) => print('${ad.runtimeType} onAdOpened.'),
+        onAdClosed: (Ad ad) {
+          print('${ad.runtimeType} closed.');
+          ad.dispose();
+          createInterstitialAd();
+        },
+        onApplicationExit: (Ad ad) =>
+            print('${ad.runtimeType} onApplicationExit.'),
+      ),
+    )..load();
   }
 
   @override

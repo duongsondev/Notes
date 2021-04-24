@@ -1,4 +1,4 @@
-#Sat Nov 21 10:02:00 ICT 2020
-base.0=D\:\\duongsondev\\notes\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
+#Sat Apr 24 15:33:53 ICT 2021
+base.0=E\:\\duongsondev\\notes\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

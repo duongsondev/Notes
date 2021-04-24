@@ -1,141 +1,553 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:1:1-47:12
-INJECTED from D:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:1:1-47:12
-INJECTED from D:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:1:1-47:12
-INJECTED from D:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:1:1-47:12
-MERGED from D:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:1:1-47:12
-MERGED from [:sqflite] D:\duongsondev\notes\build\sqflite\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
-MERGED from [:path_provider] D:\duongsondev\notes\build\path_provider\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\0986d0d74b8a2c7da8161f6370fc7744\fragment-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.activity:activity:1.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\615cab8ad6393a9c868d48761bbea666\activity-1.0.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\28d99d5113324aa067757f8ca41a426f\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.loader:loader:1.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\e1bbce6b0d79e8479b70e7bd729bb743\loader-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.customview:customview:1.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\ef0bef029ab70f5fb29de019060cf5fd\customview-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.core:core:1.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\a528b13ac93e64cafa3d0480e2c93207\core-1.1.0\AndroidManifest.xml:17:1-26:12
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\49ede1f7b9aa322a43288e9745adc2db\lifecycle-runtime-2.2.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\54d8b8735f730e83f07925f758092af3\savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\23edc849475fdda61367cb003f9b9f93\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\79f9d65ef8b1c716310f666473a689a7\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\077300052aa327ee6fc9bbb0ce309b24\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\3a7eb299570065a3866b140e1a95969b\versionedparcelable-1.1.0\AndroidManifest.xml:17:1-27:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\b80fad55c42c418cc210e235056767fb\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:17:1-22:12
-INJECTED from D:\duongsondev\notes\android\app\src\debug\AndroidManifest.xml:1:1-7:12
-INJECTED from D:\duongsondev\notes\android\app\src\debug\AndroidManifest.xml:1:1-7:12
-INJECTED from D:\duongsondev\notes\android\app\src\debug\AndroidManifest.xml:1:1-7:12
+ADDED from E:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:1:1-50:12
+INJECTED from E:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:1:1-50:12
+INJECTED from E:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:1:1-50:12
+INJECTED from E:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:1:1-50:12
+MERGED from E:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:1:1-50:12
+MERGED from [:sqflite] E:\duongsondev\notes\build\sqflite\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:google_mobile_ads] E:\duongsondev\notes\build\google_mobile_ads\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-15:12
+MERGED from [:path_provider] E:\duongsondev\notes\build\path_provider\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:in_app_purchase] E:\duongsondev\notes\build\in_app_purchase\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-ads:19.7.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\e936cb8fb1b2d0558dc3d4647fd22799\jetified-play-services-ads-19.7.0\AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-gass:19.7.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\07351b280378e0a61e87f2b95e0a619f\jetified-play-services-gass-19.7.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\666f8c041cde6b979cc3160196088f70\jetified-play-services-ads-identifier-17.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-ads-lite:19.7.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\40ae7fa2ed847c116251a2f39d998aae\jetified-play-services-ads-lite-19.7.0\AndroidManifest.xml:17:1-66:12
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.5.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\fa9e05c59fa9149b23386d0f93b052ce\jetified-play-services-measurement-sdk-api-17.5.0\AndroidManifest.xml:17:1-27:12
+MERGED from [com.google.android.gms:play-services-tasks:17.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\6150a67d857d05f22ae99f35627754c4\jetified-play-services-tasks-17.1.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-measurement-base:17.5.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\a633e7a9e2eec90024c44df0cf0d9d79\jetified-play-services-measurement-base-17.5.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:17.3.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\b43c9e81b34cea9c000c4d3830c5a1a2\jetified-play-services-basement-17.3.0\AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\50b31358220f7250ad57256c58bb5703\fragment-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\59d1790b3fbcd217cc35245fb379e877\jetified-activity-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.browser:browser:1.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\aab81716b6394f392bdce57ee36ee604\browser-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\2b4db0bf0666c34b1bc523cf05e6404a\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\f8ba508192e0973bb375e86a3e168321\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\4e4ce2f92372a4115a376822389ff956\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\6eeb12243c8e22a4e61b928e4c37fd3a\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:17:1-125:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\29ce8af8242f4e2c75faf4677b90a4ee\coordinatorlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\d5bb0efb8b3d009fefe3defe317358db\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\0d82c515694eaaf53e08f8707e16cdce\slidingpanelayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\a912b255fee194282b1b7f60e6b7b521\customview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\f2e30f7a739886282e4b4ce5b4fd76a1\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\189f60d93dd7330eb3642d4203df078e\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.room:room-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\6fb74af179531364ea5af654147e0a60\room-runtime-2.1.0\AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.core:core:1.2.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\37e7f56099c5a626c8d35e80c7951340\core-1.2.0\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.lifecycle:lifecycle-service:2.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\88112c347554d6ef34ecee7f9b772a10\jetified-lifecycle-service-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\3d21293c59fabbb19dd5de0da1feb719\lifecycle-runtime-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\a0a7e5a7c97140dbc2b4700dead990a3\jetified-savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\b29844923501f178f92df21f4c79fd1f\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\aeb56deb030fa8c7bd2ef63bc3de3734\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.1] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\ee3999334542d782ebf27f54eab85b94\core-runtime-2.0.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\79c33b9d32c7a5b83766a23ddbe9bdfe\versionedparcelable-1.1.0\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\3767bfdf888e88aa39f9b1d58f5bf959\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\8c684a6238dc3504852fa73d107ccfbf\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\229808383e537bf4d68a74f49d429050\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\830b1838a4b4d116cd678485e3289892\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\5b7e2a780c1b97f8610dfe5442e48034\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\8e0c25e6f3abf580a2b1ee38a41b6c99\print-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.sqlite:sqlite-framework:2.0.1] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\0033bea51756174fa5792b10dcafb01d\sqlite-framework-2.0.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.sqlite:sqlite:2.0.1] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\b438659fa1975357c8f4ad03a1bc2f52\sqlite-2.0.1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.billingclient:billing:3.0.2] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\5024edcea0f8dae0d5ad82cc61a187b5\jetified-billing-3.0.2\AndroidManifest.xml:2:1-24:12
+MERGED from [com.google.android.gms:play-services-ads-base:19.7.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\24a76538fe38484424c1aaf544e53cc3\jetified-play-services-ads-base-19.7.0\AndroidManifest.xml:2:1-9:12
+INJECTED from E:\duongsondev\notes\android\app\src\debug\AndroidManifest.xml:1:1-7:12
+INJECTED from E:\duongsondev\notes\android\app\src\debug\AndroidManifest.xml:1:1-7:12
+INJECTED from E:\duongsondev\notes\android\app\src\debug\AndroidManifest.xml:1:1-7:12
 	package
-		ADDED from D:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:2:5-36
-		INJECTED from D:\duongsondev\notes\android\app\src\main\AndroidManifest.xml
-		INJECTED from D:\duongsondev\notes\android\app\src\debug\AndroidManifest.xml
+		ADDED from E:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:2:5-36
+		INJECTED from E:\duongsondev\notes\android\app\src\main\AndroidManifest.xml
+		INJECTED from E:\duongsondev\notes\android\app\src\debug\AndroidManifest.xml
 	android:versionName
-		INJECTED from D:\duongsondev\notes\android\app\src\main\AndroidManifest.xml
-		ADDED from D:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:1:1-47:12
-		INJECTED from D:\duongsondev\notes\android\app\src\debug\AndroidManifest.xml
+		INJECTED from E:\duongsondev\notes\android\app\src\main\AndroidManifest.xml
+		ADDED from E:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:1:1-50:12
+		INJECTED from E:\duongsondev\notes\android\app\src\debug\AndroidManifest.xml
 	android:versionCode
-		INJECTED from D:\duongsondev\notes\android\app\src\main\AndroidManifest.xml
-		ADDED from D:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:1:1-47:12
-		INJECTED from D:\duongsondev\notes\android\app\src\debug\AndroidManifest.xml
+		INJECTED from E:\duongsondev\notes\android\app\src\main\AndroidManifest.xml
+		ADDED from E:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:1:1-50:12
+		INJECTED from E:\duongsondev\notes\android\app\src\debug\AndroidManifest.xml
 	xmlns:android
-		ADDED from D:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:1:11-69
+		ADDED from E:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:1:11-69
 application
-ADDED from D:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:8:5-46:19
-MERGED from [androidx.core:core:1.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\a528b13ac93e64cafa3d0480e2c93207\core-1.1.0\AndroidManifest.xml:24:5-89
-MERGED from [androidx.core:core:1.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\a528b13ac93e64cafa3d0480e2c93207\core-1.1.0\AndroidManifest.xml:24:5-89
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\3a7eb299570065a3866b140e1a95969b\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\3a7eb299570065a3866b140e1a95969b\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+ADDED from E:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:8:5-49:19
+MERGED from [:google_mobile_ads] E:\duongsondev\notes\build\google_mobile_ads\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-13:19
+MERGED from [:google_mobile_ads] E:\duongsondev\notes\build\google_mobile_ads\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-13:19
+MERGED from [com.google.android.gms:play-services-gass:19.7.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\07351b280378e0a61e87f2b95e0a619f\jetified-play-services-gass-19.7.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-gass:19.7.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\07351b280378e0a61e87f2b95e0a619f\jetified-play-services-gass-19.7.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\666f8c041cde6b979cc3160196088f70\jetified-play-services-ads-identifier-17.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\666f8c041cde6b979cc3160196088f70\jetified-play-services-ads-identifier-17.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-ads-lite:19.7.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\40ae7fa2ed847c116251a2f39d998aae\jetified-play-services-ads-lite-19.7.0\AndroidManifest.xml:45:5-64:19
+MERGED from [com.google.android.gms:play-services-ads-lite:19.7.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\40ae7fa2ed847c116251a2f39d998aae\jetified-play-services-ads-lite-19.7.0\AndroidManifest.xml:45:5-64:19
+MERGED from [com.google.android.gms:play-services-tasks:17.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\6150a67d857d05f22ae99f35627754c4\jetified-play-services-tasks-17.1.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:17.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\6150a67d857d05f22ae99f35627754c4\jetified-play-services-tasks-17.1.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-measurement-base:17.5.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\a633e7a9e2eec90024c44df0cf0d9d79\jetified-play-services-measurement-base-17.5.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-measurement-base:17.5.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\a633e7a9e2eec90024c44df0cf0d9d79\jetified-play-services-measurement-base-17.5.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:17.3.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\b43c9e81b34cea9c000c4d3830c5a1a2\jetified-play-services-basement-17.3.0\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:17.3.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\b43c9e81b34cea9c000c4d3830c5a1a2\jetified-play-services-basement-17.3.0\AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:29:5-123:19
+MERGED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:29:5-123:19
+MERGED from [androidx.room:room-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\6fb74af179531364ea5af654147e0a60\room-runtime-2.1.0\AndroidManifest.xml:24:5-28:19
+MERGED from [androidx.room:room-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\6fb74af179531364ea5af654147e0a60\room-runtime-2.1.0\AndroidManifest.xml:24:5-28:19
+MERGED from [androidx.core:core:1.2.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\37e7f56099c5a626c8d35e80c7951340\core-1.2.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.2.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\37e7f56099c5a626c8d35e80c7951340\core-1.2.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\79c33b9d32c7a5b83766a23ddbe9bdfe\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\79c33b9d32c7a5b83766a23ddbe9bdfe\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+MERGED from [com.android.billingclient:billing:3.0.2] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\5024edcea0f8dae0d5ad82cc61a187b5\jetified-billing-3.0.2\AndroidManifest.xml:12:5-22:19
+MERGED from [com.android.billingclient:billing:3.0.2] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\5024edcea0f8dae0d5ad82cc61a187b5\jetified-billing-3.0.2\AndroidManifest.xml:12:5-22:19
+MERGED from [com.google.android.gms:play-services-ads-base:19.7.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\24a76538fe38484424c1aaf544e53cc3\jetified-play-services-ads-base-19.7.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-ads-base:19.7.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\24a76538fe38484424c1aaf544e53cc3\jetified-play-services-ads-base-19.7.0\AndroidManifest.xml:7:5-20
 	android:appComponentFactory
-		ADDED from [androidx.core:core:1.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\a528b13ac93e64cafa3d0480e2c93207\core-1.1.0\AndroidManifest.xml:24:18-86
+		ADDED from [androidx.core:core:1.2.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\37e7f56099c5a626c8d35e80c7951340\core-1.2.0\AndroidManifest.xml:24:18-86
 	android:label
-		ADDED from D:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:10:9-33
+		ADDED from E:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:10:9-33
 	android:icon
-		ADDED from D:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:11:9-43
+		ADDED from E:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:11:9-43
 	android:name
-		ADDED from D:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:9:9-57
-activity#dev.duongson.fa_notes.MainActivity
-ADDED from D:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:12:9-40:20
-	android:launchMode
-		ADDED from D:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:14:13-43
-	android:hardwareAccelerated
-		ADDED from D:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:17:13-47
-	android:windowSoftInputMode
-		ADDED from D:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:18:13-55
-	android:configChanges
-		ADDED from D:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:16:13-163
-	android:theme
-		ADDED from D:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:15:13-47
-	android:name
-		ADDED from D:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:13:13-41
-meta-data#io.flutter.embedding.android.NormalTheme
-ADDED from D:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:23:13-26:17
-	android:resource
-		ADDED from D:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:25:15-52
-	android:name
-		ADDED from D:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:24:15-70
-meta-data#io.flutter.embedding.android.SplashScreenDrawable
-ADDED from D:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:32:13-35:17
-	android:resource
-		ADDED from D:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:34:15-61
-	android:name
-		ADDED from D:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:33:15-79
-intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:36:13-39:29
-action#android.intent.action.MAIN
-ADDED from D:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:37:17-68
-	android:name
-		ADDED from D:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:37:25-66
-category#android.intent.category.LAUNCHER
-ADDED from D:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:38:17-76
-	android:name
-		ADDED from D:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:38:27-74
-meta-data#flutterEmbedding
-ADDED from D:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:43:9-45:33
+		ADDED from E:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:9:9-57
+meta-data#com.google.android.gms.ads.APPLICATION_ID
+ADDED from E:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:12:9-14:69
 	android:value
-		ADDED from D:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:45:13-30
+		ADDED from E:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:14:13-67
 	android:name
-		ADDED from D:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:44:13-44
+		ADDED from E:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:13:13-69
+activity#dev.duongson.fa_notes.MainActivity
+ADDED from E:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:15:9-43:20
+	android:launchMode
+		ADDED from E:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:17:13-43
+	android:hardwareAccelerated
+		ADDED from E:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:20:13-47
+	android:windowSoftInputMode
+		ADDED from E:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:21:13-55
+	android:configChanges
+		ADDED from E:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:19:13-163
+	android:theme
+		ADDED from E:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:18:13-47
+	android:name
+		ADDED from E:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:16:13-41
+meta-data#io.flutter.embedding.android.NormalTheme
+ADDED from E:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:26:13-29:17
+	android:resource
+		ADDED from E:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:28:15-52
+	android:name
+		ADDED from E:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:27:15-70
+meta-data#io.flutter.embedding.android.SplashScreenDrawable
+ADDED from E:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:35:13-38:17
+	android:resource
+		ADDED from E:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:37:15-61
+	android:name
+		ADDED from E:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:36:15-79
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from E:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:39:13-42:29
+action#android.intent.action.MAIN
+ADDED from E:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:40:17-68
+	android:name
+		ADDED from E:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:40:25-66
+category#android.intent.category.LAUNCHER
+ADDED from E:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:41:17-76
+	android:name
+		ADDED from E:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:41:27-74
+meta-data#flutterEmbedding
+ADDED from E:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:46:9-48:33
+	android:value
+		ADDED from E:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:48:13-30
+	android:name
+		ADDED from E:\duongsondev\notes\android\app\src\main\AndroidManifest.xml:47:13-44
 uses-sdk
-INJECTED from D:\duongsondev\notes\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from D:\duongsondev\notes\android\app\src\main\AndroidManifest.xml
-INJECTED from D:\duongsondev\notes\android\app\src\main\AndroidManifest.xml
-MERGED from [:sqflite] D:\duongsondev\notes\build\sqflite\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:sqflite] D:\duongsondev\notes\build\sqflite\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:path_provider] D:\duongsondev\notes\build\path_provider\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:path_provider] D:\duongsondev\notes\build\path_provider\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\0986d0d74b8a2c7da8161f6370fc7744\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\0986d0d74b8a2c7da8161f6370fc7744\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.activity:activity:1.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\615cab8ad6393a9c868d48761bbea666\activity-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.activity:activity:1.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\615cab8ad6393a9c868d48761bbea666\activity-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\28d99d5113324aa067757f8ca41a426f\viewpager-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\28d99d5113324aa067757f8ca41a426f\viewpager-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\e1bbce6b0d79e8479b70e7bd729bb743\loader-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\e1bbce6b0d79e8479b70e7bd729bb743\loader-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\ef0bef029ab70f5fb29de019060cf5fd\customview-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\ef0bef029ab70f5fb29de019060cf5fd\customview-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core:1.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\a528b13ac93e64cafa3d0480e2c93207\core-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.core:core:1.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\a528b13ac93e64cafa3d0480e2c93207\core-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\49ede1f7b9aa322a43288e9745adc2db\lifecycle-runtime-2.2.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\49ede1f7b9aa322a43288e9745adc2db\lifecycle-runtime-2.2.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\54d8b8735f730e83f07925f758092af3\savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\54d8b8735f730e83f07925f758092af3\savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\23edc849475fdda61367cb003f9b9f93\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\23edc849475fdda61367cb003f9b9f93\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\79f9d65ef8b1c716310f666473a689a7\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\79f9d65ef8b1c716310f666473a689a7\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\077300052aa327ee6fc9bbb0ce309b24\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\077300052aa327ee6fc9bbb0ce309b24\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\3a7eb299570065a3866b140e1a95969b\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\3a7eb299570065a3866b140e1a95969b\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\b80fad55c42c418cc210e235056767fb\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\b80fad55c42c418cc210e235056767fb\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
-INJECTED from D:\duongsondev\notes\android\app\src\debug\AndroidManifest.xml
-INJECTED from D:\duongsondev\notes\android\app\src\debug\AndroidManifest.xml
+INJECTED from E:\duongsondev\notes\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from E:\duongsondev\notes\android\app\src\main\AndroidManifest.xml
+INJECTED from E:\duongsondev\notes\android\app\src\main\AndroidManifest.xml
+MERGED from [:sqflite] E:\duongsondev\notes\build\sqflite\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:sqflite] E:\duongsondev\notes\build\sqflite\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:google_mobile_ads] E:\duongsondev\notes\build\google_mobile_ads\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:google_mobile_ads] E:\duongsondev\notes\build\google_mobile_ads\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:path_provider] E:\duongsondev\notes\build\path_provider\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:path_provider] E:\duongsondev\notes\build\path_provider\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:in_app_purchase] E:\duongsondev\notes\build\in_app_purchase\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:in_app_purchase] E:\duongsondev\notes\build\in_app_purchase\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-ads:19.7.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\e936cb8fb1b2d0558dc3d4647fd22799\jetified-play-services-ads-19.7.0\AndroidManifest.xml:21:5-23:52
+MERGED from [com.google.android.gms:play-services-ads:19.7.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\e936cb8fb1b2d0558dc3d4647fd22799\jetified-play-services-ads-19.7.0\AndroidManifest.xml:21:5-23:52
+MERGED from [com.google.android.gms:play-services-gass:19.7.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\07351b280378e0a61e87f2b95e0a619f\jetified-play-services-gass-19.7.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-gass:19.7.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\07351b280378e0a61e87f2b95e0a619f\jetified-play-services-gass-19.7.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\666f8c041cde6b979cc3160196088f70\jetified-play-services-ads-identifier-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\666f8c041cde6b979cc3160196088f70\jetified-play-services-ads-identifier-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-lite:19.7.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\40ae7fa2ed847c116251a2f39d998aae\jetified-play-services-ads-lite-19.7.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-lite:19.7.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\40ae7fa2ed847c116251a2f39d998aae\jetified-play-services-ads-lite-19.7.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.5.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\fa9e05c59fa9149b23386d0f93b052ce\jetified-play-services-measurement-sdk-api-17.5.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.5.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\fa9e05c59fa9149b23386d0f93b052ce\jetified-play-services-measurement-sdk-api-17.5.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\6150a67d857d05f22ae99f35627754c4\jetified-play-services-tasks-17.1.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\6150a67d857d05f22ae99f35627754c4\jetified-play-services-tasks-17.1.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:17.5.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\a633e7a9e2eec90024c44df0cf0d9d79\jetified-play-services-measurement-base-17.5.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:17.5.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\a633e7a9e2eec90024c44df0cf0d9d79\jetified-play-services-measurement-base-17.5.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.3.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\b43c9e81b34cea9c000c4d3830c5a1a2\jetified-play-services-basement-17.3.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.3.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\b43c9e81b34cea9c000c4d3830c5a1a2\jetified-play-services-basement-17.3.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\50b31358220f7250ad57256c58bb5703\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\50b31358220f7250ad57256c58bb5703\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\59d1790b3fbcd217cc35245fb379e877\jetified-activity-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\59d1790b3fbcd217cc35245fb379e877\jetified-activity-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.browser:browser:1.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\aab81716b6394f392bdce57ee36ee604\browser-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.browser:browser:1.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\aab81716b6394f392bdce57ee36ee604\browser-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\2b4db0bf0666c34b1bc523cf05e6404a\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\2b4db0bf0666c34b1bc523cf05e6404a\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\f8ba508192e0973bb375e86a3e168321\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\f8ba508192e0973bb375e86a3e168321\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\4e4ce2f92372a4115a376822389ff956\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\4e4ce2f92372a4115a376822389ff956\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\6eeb12243c8e22a4e61b928e4c37fd3a\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\6eeb12243c8e22a4e61b928e4c37fd3a\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\29ce8af8242f4e2c75faf4677b90a4ee\coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\29ce8af8242f4e2c75faf4677b90a4ee\coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\d5bb0efb8b3d009fefe3defe317358db\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\d5bb0efb8b3d009fefe3defe317358db\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\0d82c515694eaaf53e08f8707e16cdce\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\0d82c515694eaaf53e08f8707e16cdce\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\a912b255fee194282b1b7f60e6b7b521\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\a912b255fee194282b1b7f60e6b7b521\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\f2e30f7a739886282e4b4ce5b4fd76a1\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\f2e30f7a739886282e4b4ce5b4fd76a1\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\189f60d93dd7330eb3642d4203df078e\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\189f60d93dd7330eb3642d4203df078e\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.room:room-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\6fb74af179531364ea5af654147e0a60\room-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.room:room-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\6fb74af179531364ea5af654147e0a60\room-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.2.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\37e7f56099c5a626c8d35e80c7951340\core-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.2.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\37e7f56099c5a626c8d35e80c7951340\core-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-service:2.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\88112c347554d6ef34ecee7f9b772a10\jetified-lifecycle-service-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-service:2.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\88112c347554d6ef34ecee7f9b772a10\jetified-lifecycle-service-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\3d21293c59fabbb19dd5de0da1feb719\lifecycle-runtime-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\3d21293c59fabbb19dd5de0da1feb719\lifecycle-runtime-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\a0a7e5a7c97140dbc2b4700dead990a3\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\a0a7e5a7c97140dbc2b4700dead990a3\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\b29844923501f178f92df21f4c79fd1f\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\b29844923501f178f92df21f4c79fd1f\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\aeb56deb030fa8c7bd2ef63bc3de3734\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\aeb56deb030fa8c7bd2ef63bc3de3734\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.1] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\ee3999334542d782ebf27f54eab85b94\core-runtime-2.0.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.1] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\ee3999334542d782ebf27f54eab85b94\core-runtime-2.0.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\79c33b9d32c7a5b83766a23ddbe9bdfe\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\79c33b9d32c7a5b83766a23ddbe9bdfe\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\3767bfdf888e88aa39f9b1d58f5bf959\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\3767bfdf888e88aa39f9b1d58f5bf959\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\8c684a6238dc3504852fa73d107ccfbf\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\8c684a6238dc3504852fa73d107ccfbf\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\229808383e537bf4d68a74f49d429050\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\229808383e537bf4d68a74f49d429050\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\830b1838a4b4d116cd678485e3289892\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\830b1838a4b4d116cd678485e3289892\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\5b7e2a780c1b97f8610dfe5442e48034\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\5b7e2a780c1b97f8610dfe5442e48034\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\8e0c25e6f3abf580a2b1ee38a41b6c99\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\8e0c25e6f3abf580a2b1ee38a41b6c99\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite-framework:2.0.1] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\0033bea51756174fa5792b10dcafb01d\sqlite-framework-2.0.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite-framework:2.0.1] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\0033bea51756174fa5792b10dcafb01d\sqlite-framework-2.0.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.0.1] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\b438659fa1975357c8f4ad03a1bc2f52\sqlite-2.0.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.0.1] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\b438659fa1975357c8f4ad03a1bc2f52\sqlite-2.0.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.billingclient:billing:3.0.2] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\5024edcea0f8dae0d5ad82cc61a187b5\jetified-billing-3.0.2\AndroidManifest.xml:6:5-8:41
+MERGED from [com.android.billingclient:billing:3.0.2] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\5024edcea0f8dae0d5ad82cc61a187b5\jetified-billing-3.0.2\AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.android.gms:play-services-ads-base:19.7.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\24a76538fe38484424c1aaf544e53cc3\jetified-play-services-ads-base-19.7.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-ads-base:19.7.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\24a76538fe38484424c1aaf544e53cc3\jetified-play-services-ads-base-19.7.0\AndroidManifest.xml:5:5-44
+INJECTED from E:\duongsondev\notes\android\app\src\debug\AndroidManifest.xml
+INJECTED from E:\duongsondev\notes\android\app\src\debug\AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.google.android.gms:play-services-ads:19.7.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\e936cb8fb1b2d0558dc3d4647fd22799\jetified-play-services-ads-19.7.0\AndroidManifest.xml:23:9-49
 	android:targetSdkVersion
-		INJECTED from D:\duongsondev\notes\android\app\src\main\AndroidManifest.xml
-		INJECTED from D:\duongsondev\notes\android\app\src\debug\AndroidManifest.xml
+		INJECTED from E:\duongsondev\notes\android\app\src\main\AndroidManifest.xml
+		INJECTED from E:\duongsondev\notes\android\app\src\debug\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from D:\duongsondev\notes\android\app\src\main\AndroidManifest.xml
-		INJECTED from D:\duongsondev\notes\android\app\src\debug\AndroidManifest.xml
+		INJECTED from E:\duongsondev\notes\android\app\src\main\AndroidManifest.xml
+		INJECTED from E:\duongsondev\notes\android\app\src\debug\AndroidManifest.xml
 uses-permission#android.permission.INTERNET
-ADDED from D:\duongsondev\notes\android\app\src\debug\AndroidManifest.xml:6:5-66
+ADDED from E:\duongsondev\notes\android\app\src\debug\AndroidManifest.xml:6:5-66
+MERGED from [:google_mobile_ads] E:\duongsondev\notes\build\google_mobile_ads\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-67
+MERGED from [:google_mobile_ads] E:\duongsondev\notes\build\google_mobile_ads\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-67
+MERGED from [com.google.android.gms:play-services-ads-lite:19.7.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\40ae7fa2ed847c116251a2f39d998aae\jetified-play-services-ads-lite-19.7.0\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-ads-lite:19.7.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\40ae7fa2ed847c116251a2f39d998aae\jetified-play-services-ads-lite-19.7.0\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.5.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\fa9e05c59fa9149b23386d0f93b052ce\jetified-play-services-measurement-sdk-api-17.5.0\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.5.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\fa9e05c59fa9149b23386d0f93b052ce\jetified-play-services-measurement-sdk-api-17.5.0\AndroidManifest.xml:23:5-67
 	android:name
-		ADDED from D:\duongsondev\notes\android\app\src\debug\AndroidManifest.xml:6:22-64
+		ADDED from E:\duongsondev\notes\android\app\src\debug\AndroidManifest.xml:6:22-64
+meta-data#io.flutter.embedded_views_preview
+ADDED from [:google_mobile_ads] E:\duongsondev\notes\build\google_mobile_ads\intermediates\library_manifest\debug\AndroidManifest.xml:10:9-12:36
+	android:value
+		ADDED from [:google_mobile_ads] E:\duongsondev\notes\build\google_mobile_ads\intermediates\library_manifest\debug\AndroidManifest.xml:12:13-33
+	android:name
+		ADDED from [:google_mobile_ads] E:\duongsondev\notes\build\google_mobile_ads\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-61
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.android.gms:play-services-ads-lite:19.7.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\40ae7fa2ed847c116251a2f39d998aae\jetified-play-services-ads-lite-19.7.0\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.5.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\fa9e05c59fa9149b23386d0f93b052ce\jetified-play-services-measurement-sdk-api-17.5.0\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.5.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\fa9e05c59fa9149b23386d0f93b052ce\jetified-play-services-measurement-sdk-api-17.5.0\AndroidManifest.xml:24:5-79
+MERGED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:26:5-79
+MERGED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:26:5-79
+	android:name
+		ADDED from [com.google.android.gms:play-services-ads-lite:19.7.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\40ae7fa2ed847c116251a2f39d998aae\jetified-play-services-ads-lite-19.7.0\AndroidManifest.xml:24:22-76
+queries
+ADDED from [com.google.android.gms:play-services-ads-lite:19.7.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\40ae7fa2ed847c116251a2f39d998aae\jetified-play-services-ads-lite-19.7.0\AndroidManifest.xml:27:5-43:15
+intent#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+data:scheme:https
+ADDED from [com.google.android.gms:play-services-ads-lite:19.7.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\40ae7fa2ed847c116251a2f39d998aae\jetified-play-services-ads-lite-19.7.0\AndroidManifest.xml:30:9-36:18
+action#android.intent.action.VIEW
+ADDED from [com.google.android.gms:play-services-ads-lite:19.7.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\40ae7fa2ed847c116251a2f39d998aae\jetified-play-services-ads-lite-19.7.0\AndroidManifest.xml:31:13-65
+	android:name
+		ADDED from [com.google.android.gms:play-services-ads-lite:19.7.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\40ae7fa2ed847c116251a2f39d998aae\jetified-play-services-ads-lite-19.7.0\AndroidManifest.xml:31:21-62
+category#android.intent.category.BROWSABLE
+ADDED from [com.google.android.gms:play-services-ads-lite:19.7.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\40ae7fa2ed847c116251a2f39d998aae\jetified-play-services-ads-lite-19.7.0\AndroidManifest.xml:33:13-74
+	android:name
+		ADDED from [com.google.android.gms:play-services-ads-lite:19.7.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\40ae7fa2ed847c116251a2f39d998aae\jetified-play-services-ads-lite-19.7.0\AndroidManifest.xml:33:23-71
+data
+ADDED from [com.google.android.gms:play-services-ads-lite:19.7.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\40ae7fa2ed847c116251a2f39d998aae\jetified-play-services-ads-lite-19.7.0\AndroidManifest.xml:35:13-44
+	android:scheme
+		ADDED from [com.google.android.gms:play-services-ads-lite:19.7.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\40ae7fa2ed847c116251a2f39d998aae\jetified-play-services-ads-lite-19.7.0\AndroidManifest.xml:35:19-41
+intent#action:name:android.support.customtabs.action.CustomTabsService
+ADDED from [com.google.android.gms:play-services-ads-lite:19.7.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\40ae7fa2ed847c116251a2f39d998aae\jetified-play-services-ads-lite-19.7.0\AndroidManifest.xml:39:9-41:18
+action#android.support.customtabs.action.CustomTabsService
+ADDED from [com.google.android.gms:play-services-ads-lite:19.7.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\40ae7fa2ed847c116251a2f39d998aae\jetified-play-services-ads-lite-19.7.0\AndroidManifest.xml:40:13-90
+	android:name
+		ADDED from [com.google.android.gms:play-services-ads-lite:19.7.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\40ae7fa2ed847c116251a2f39d998aae\jetified-play-services-ads-lite-19.7.0\AndroidManifest.xml:40:21-87
+activity#com.google.android.gms.ads.AdActivity
+ADDED from [com.google.android.gms:play-services-ads-lite:19.7.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\40ae7fa2ed847c116251a2f39d998aae\jetified-play-services-ads-lite-19.7.0\AndroidManifest.xml:48:9-52:64
+	android:exported
+		ADDED from [com.google.android.gms:play-services-ads-lite:19.7.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\40ae7fa2ed847c116251a2f39d998aae\jetified-play-services-ads-lite-19.7.0\AndroidManifest.xml:51:13-37
+	android:configChanges
+		ADDED from [com.google.android.gms:play-services-ads-lite:19.7.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\40ae7fa2ed847c116251a2f39d998aae\jetified-play-services-ads-lite-19.7.0\AndroidManifest.xml:50:13-122
+	android:theme
+		ADDED from [com.google.android.gms:play-services-ads-lite:19.7.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\40ae7fa2ed847c116251a2f39d998aae\jetified-play-services-ads-lite-19.7.0\AndroidManifest.xml:52:13-61
+	android:name
+		ADDED from [com.google.android.gms:play-services-ads-lite:19.7.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\40ae7fa2ed847c116251a2f39d998aae\jetified-play-services-ads-lite-19.7.0\AndroidManifest.xml:49:13-65
+provider#com.google.android.gms.ads.MobileAdsInitProvider
+ADDED from [com.google.android.gms:play-services-ads-lite:19.7.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\40ae7fa2ed847c116251a2f39d998aae\jetified-play-services-ads-lite-19.7.0\AndroidManifest.xml:54:9-58:39
+	android:authorities
+		ADDED from [com.google.android.gms:play-services-ads-lite:19.7.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\40ae7fa2ed847c116251a2f39d998aae\jetified-play-services-ads-lite-19.7.0\AndroidManifest.xml:56:13-73
+	android:exported
+		ADDED from [com.google.android.gms:play-services-ads-lite:19.7.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\40ae7fa2ed847c116251a2f39d998aae\jetified-play-services-ads-lite-19.7.0\AndroidManifest.xml:57:13-37
+	android:initOrder
+		ADDED from [com.google.android.gms:play-services-ads-lite:19.7.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\40ae7fa2ed847c116251a2f39d998aae\jetified-play-services-ads-lite-19.7.0\AndroidManifest.xml:58:13-36
+	android:name
+		ADDED from [com.google.android.gms:play-services-ads-lite:19.7.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\40ae7fa2ed847c116251a2f39d998aae\jetified-play-services-ads-lite-19.7.0\AndroidManifest.xml:55:13-76
+service#com.google.android.gms.ads.AdService
+ADDED from [com.google.android.gms:play-services-ads-lite:19.7.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\40ae7fa2ed847c116251a2f39d998aae\jetified-play-services-ads-lite-19.7.0\AndroidManifest.xml:60:9-63:40
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-ads-lite:19.7.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\40ae7fa2ed847c116251a2f39d998aae\jetified-play-services-ads-lite-19.7.0\AndroidManifest.xml:62:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-ads-lite:19.7.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\40ae7fa2ed847c116251a2f39d998aae\jetified-play-services-ads-lite-19.7.0\AndroidManifest.xml:63:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-ads-lite:19.7.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\40ae7fa2ed847c116251a2f39d998aae\jetified-play-services-ads-lite-19.7.0\AndroidManifest.xml:61:13-64
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [com.google.android.gms:play-services-measurement-sdk-api:17.5.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\fa9e05c59fa9149b23386d0f93b052ce\jetified-play-services-measurement-sdk-api-17.5.0\AndroidManifest.xml:25:5-68
+MERGED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:25:5-68
+MERGED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:25:5-68
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement-sdk-api:17.5.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\fa9e05c59fa9149b23386d0f93b052ce\jetified-play-services-measurement-sdk-api-17.5.0\AndroidManifest.xml:25:22-65
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:17.3.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\b43c9e81b34cea9c000c4d3830c5a1a2\jetified-play-services-basement-17.3.0\AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:17.3.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\b43c9e81b34cea9c000c4d3830c5a1a2\jetified-play-services-basement-17.3.0\AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:17.3.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\b43c9e81b34cea9c000c4d3830c5a1a2\jetified-play-services-basement-17.3.0\AndroidManifest.xml:24:13-58
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:27:5-81
+	android:name
+		ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:27:22-78
+provider#androidx.work.impl.WorkManagerInitializer
+ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:30:9-36:35
+	android:authorities
+		ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:32:13-68
+	android:multiprocess
+		ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:35:13-40
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:34:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:36:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:33:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:31:13-69
+service#androidx.work.impl.background.systemalarm.SystemAlarmService
+ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:38:9-43:35
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:41:13-72
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:42:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:43:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:40:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:39:13-88
+service#androidx.work.impl.background.systemjob.SystemJobService
+ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:44:9-50:35
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:47:13-70
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:48:13-36
+	android:permission
+		ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:49:13-69
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:50:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:46:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:45:13-84
+receiver#androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver
+ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:52:9-57:35
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:55:13-35
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:56:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:57:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:54:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:53:13-88
+receiver#androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy
+ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:58:9-68:20
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:61:13-36
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:62:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:63:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:60:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:59:13-106
+intent-filter#action:name:android.intent.action.ACTION_POWER_CONNECTED+action:name:android.intent.action.ACTION_POWER_DISCONNECTED
+ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:64:13-67:29
+action#android.intent.action.ACTION_POWER_CONNECTED
+ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:65:17-87
+	android:name
+		ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:65:25-84
+action#android.intent.action.ACTION_POWER_DISCONNECTED
+ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:66:17-90
+	android:name
+		ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:66:25-87
+receiver#androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy
+ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:69:9-79:20
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:72:13-36
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:73:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:74:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:71:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:70:13-104
+intent-filter#action:name:android.intent.action.BATTERY_LOW+action:name:android.intent.action.BATTERY_OKAY
+ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:75:13-78:29
+action#android.intent.action.BATTERY_OKAY
+ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:76:17-77
+	android:name
+		ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:76:25-74
+action#android.intent.action.BATTERY_LOW
+ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:77:17-76
+	android:name
+		ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:77:25-73
+receiver#androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy
+ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:80:9-90:20
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:83:13-36
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:84:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:85:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:82:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:81:13-104
+intent-filter#action:name:android.intent.action.DEVICE_STORAGE_LOW+action:name:android.intent.action.DEVICE_STORAGE_OK
+ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:86:13-89:29
+action#android.intent.action.DEVICE_STORAGE_LOW
+ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:87:17-83
+	android:name
+		ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:87:25-80
+action#android.intent.action.DEVICE_STORAGE_OK
+ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:88:17-82
+	android:name
+		ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:88:25-79
+receiver#androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy
+ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:91:9-100:20
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:94:13-36
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:95:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:96:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:93:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:92:13-103
+intent-filter#action:name:android.net.conn.CONNECTIVITY_CHANGE
+ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:97:13-99:29
+action#android.net.conn.CONNECTIVITY_CHANGE
+ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:98:17-79
+	android:name
+		ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:98:25-76
+receiver#androidx.work.impl.background.systemalarm.RescheduleReceiver
+ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:101:9-112:20
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:104:13-36
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:105:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:106:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:103:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:102:13-88
+intent-filter#action:name:android.intent.action.BOOT_COMPLETED+action:name:android.intent.action.TIMEZONE_CHANGED+action:name:android.intent.action.TIME_SET
+ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:107:13-111:29
+action#android.intent.action.BOOT_COMPLETED
+ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:108:17-79
+	android:name
+		ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:108:25-76
+action#android.intent.action.TIME_SET
+ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:109:17-73
+	android:name
+		ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:109:25-70
+action#android.intent.action.TIMEZONE_CHANGED
+ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:110:17-81
+	android:name
+		ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:110:25-78
+receiver#androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver
+ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:113:9-122:20
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:116:13-72
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:117:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:118:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:115:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:114:13-99
+intent-filter#action:name:androidx.work.impl.background.systemalarm.UpdateProxies
+ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:119:13-121:29
+action#androidx.work.impl.background.systemalarm.UpdateProxies
+ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:120:17-98
+	android:name
+		ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\52c83b6103a168007508812af8758f74\work-runtime-2.1.0\AndroidManifest.xml:120:25-95
+service#androidx.room.MultiInstanceInvalidationService
+ADDED from [androidx.room:room-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\6fb74af179531364ea5af654147e0a60\room-runtime-2.1.0\AndroidManifest.xml:25:9-27:40
+	android:exported
+		ADDED from [androidx.room:room-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\6fb74af179531364ea5af654147e0a60\room-runtime-2.1.0\AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.room:room-runtime:2.1.0] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\6fb74af179531364ea5af654147e0a60\room-runtime-2.1.0\AndroidManifest.xml:26:13-74
+uses-permission#com.android.vending.BILLING
+ADDED from [com.android.billingclient:billing:3.0.2] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\5024edcea0f8dae0d5ad82cc61a187b5\jetified-billing-3.0.2\AndroidManifest.xml:10:5-67
+	android:name
+		ADDED from [com.android.billingclient:billing:3.0.2] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\5024edcea0f8dae0d5ad82cc61a187b5\jetified-billing-3.0.2\AndroidManifest.xml:10:22-64
+meta-data#com.google.android.play.billingclient.version
+ADDED from [com.android.billingclient:billing:3.0.2] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\5024edcea0f8dae0d5ad82cc61a187b5\jetified-billing-3.0.2\AndroidManifest.xml:13:9-15:37
+	android:value
+		ADDED from [com.android.billingclient:billing:3.0.2] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\5024edcea0f8dae0d5ad82cc61a187b5\jetified-billing-3.0.2\AndroidManifest.xml:15:13-34
+	android:name
+		ADDED from [com.android.billingclient:billing:3.0.2] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\5024edcea0f8dae0d5ad82cc61a187b5\jetified-billing-3.0.2\AndroidManifest.xml:14:13-73
+activity#com.android.billingclient.api.ProxyBillingActivity
+ADDED from [com.android.billingclient:billing:3.0.2] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\5024edcea0f8dae0d5ad82cc61a187b5\jetified-billing-3.0.2\AndroidManifest.xml:17:9-21:75
+	android:exported
+		ADDED from [com.android.billingclient:billing:3.0.2] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\5024edcea0f8dae0d5ad82cc61a187b5\jetified-billing-3.0.2\AndroidManifest.xml:20:13-37
+	android:configChanges
+		ADDED from [com.android.billingclient:billing:3.0.2] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\5024edcea0f8dae0d5ad82cc61a187b5\jetified-billing-3.0.2\AndroidManifest.xml:19:13-96
+	android:theme
+		ADDED from [com.android.billingclient:billing:3.0.2] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\5024edcea0f8dae0d5ad82cc61a187b5\jetified-billing-3.0.2\AndroidManifest.xml:21:13-72
+	android:name
+		ADDED from [com.android.billingclient:billing:3.0.2] C:\Users\duongsondev\.gradle\caches\transforms-2\files-2.1\5024edcea0f8dae0d5ad82cc61a187b5\jetified-billing-3.0.2\AndroidManifest.xml:18:13-78
